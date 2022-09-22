@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+:root {
+  --orange: rgb(251, 116, 19);
+  --white: rgb(255, 255, 255);
+  --light-grey: rgb(149, 158, 172);
+  --medium-grey: rgb(124, 135, 152);
+  --dark-blue: rgb(37, 45, 55);
+  --very-dark-blue: rgb(18, 20, 23);
+
+  --p-font-size: 16px;
+}
+
+p {
+  font-size: var(--p-font-size);
+  color: var(--light-grey);
+  padding-left: 3rem;
+}
+
+.container {
+  width: 40vw;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+  overflow: hidden;
+}
+
+.btn {
+  background-color: rgba(124, 135, 152, 0.1);
+  border: none;
+  border-radius: 50px;
+  margin: 3rem 3rem 3rem;
+  max-width: 4rem;
+  min-width: 4rem;
+  max-height: 4rem;
+  min-height: 4rem;
+  display: inline-block;
+}
+
+.btn-round {
+  margin-right: 50%;
+}
+
+.btn.left {
+  margin-right: auto;
+}
+
+.btn-group-container {
+  display: inline-block;
+}
+
+h1 {
+  color: var(--white);
+  padding-left: 3rem;
+}
